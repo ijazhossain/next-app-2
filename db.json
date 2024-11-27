@@ -1,0 +1,40 @@
+{
+  "shoes": [
+    {
+      "id": 1,
+      "title": "Classic Sneakers",
+      "description": "Comfortable and stylish sneakers for everyday wear.",
+      "price": 119.99
+    },
+    {
+      "id": 2,
+      "title": "Running Shoes",
+      "description": "Lightweight running shoes designed for maximum performance.",
+      "price": 89.99
+    },
+    {
+      "id": 3,
+      "title": "Leather Loafers",
+      "description": "Elegant leather loafers suitable for formal occasions.",
+      "price": 120.0
+    },
+    {
+      "id": 4,
+      "title": "Hiking Boots",
+      "description": "Durable boots built for tough terrains and outdoor adventures.",
+      "price": 99.99
+    },
+    {
+      "id": 5,
+      "title": "Slip-On Sandals",
+      "description": "Casual slip-on sandals perfect for summer days.",
+      "price": 29.99
+    },
+    {
+      "id": 6,
+      "title": "High-Top Trainers",
+      "description": "Trendy high-top trainers for a sporty and fashionable look.",
+      "price": 75.5
+    }
+  ]
+}

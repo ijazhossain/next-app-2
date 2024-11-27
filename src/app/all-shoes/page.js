@@ -1,21 +1,13 @@
-import Link from "next/link";
-import React from "react";
-export const metadata = {
-  title: "Home page",
-  description: "This is home page description",
-};
-const HomePage = async () => {
+const AllShoesPage = async () => {
   const res = await fetch("http://localhost:5000/shoes", {
-    next: {
-      revalidate: 5,
-    },
+    cache: "no-cache",
   });
   const shoes = await res.json();
   return (
     <div>
-      <h1 className="text-center text-2xl">Welcome to next JS home page</h1>
-      <div className="flex justify-between">
-        {shoes.slice(0, 3).map((shoe) => (
+      <h1>All Shoes</h1>
+      <div className="grid grid-cols-3 gap-6">
+        {shoes.map((shoe) => (
           <div key={shoe.id} className="card bg-base-100 w-80 shadow-xl p-5">
             <figure>
               <img
@@ -36,11 +28,8 @@ const HomePage = async () => {
           </div>
         ))}
       </div>
-      <Link href="/all-shoes" className=" text-center my-8">
-        <button className="btn btn-primary mx-auto">Show more</button>
-      </Link>
     </div>
   );
 };
 
-export default HomePage;
+export default AllShoesPage;
